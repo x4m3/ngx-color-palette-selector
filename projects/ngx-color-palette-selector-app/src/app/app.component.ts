@@ -39,6 +39,6 @@ export class AppComponent implements OnInit {
   //   '#ABBF3C',
   //   '#3189A6',
   //   '#F96E61',
-  // ]
+  // ];
 
 }
