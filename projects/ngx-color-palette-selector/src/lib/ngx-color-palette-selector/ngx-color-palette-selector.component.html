@@ -1,0 +1,6 @@
+<div *ngFor="let color of _colors" class="color-selector">
+  <label [for]="color.color">
+    <lib-circle [color]="color.color" [isSelected]="color.isSelected"></lib-circle>
+  </label>
+  <input (change)="selectNewColor($event)" type="radio" [id]="color.color" name="colorSelect" [value]="color.color" [(ngModel)]="selected">
+</div>

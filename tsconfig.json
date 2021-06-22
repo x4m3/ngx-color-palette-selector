@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-color-palette-selector": [
+        "dist/ngx-color-palette-selector/ngx-color-palette-selector",
+        "dist/ngx-color-palette-selector"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
