@@ -1,0 +1,8 @@
+ngx-color-palette-selector {
+  display: flex;
+  flex-direction: row;
+}
+
+fieldset {
+  display: inline;
+}

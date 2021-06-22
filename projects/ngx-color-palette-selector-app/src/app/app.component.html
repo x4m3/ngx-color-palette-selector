@@ -1,0 +1,10 @@
+<h1>ngx-color-palette-selector</h1>
+
+<pre>{{ selected }}</pre>
+
+<fieldset>
+  <legend>List of colors</legend>
+  <pre *ngFor="let color of colors">{{ color }}</pre>
+</fieldset>
+
+<ngx-color-palette-selector [colors]="colors" [(selected)]="selected"></ngx-color-palette-selector>
