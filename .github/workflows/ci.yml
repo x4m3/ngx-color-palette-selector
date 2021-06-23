@@ -25,3 +25,4 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }} # generate in npm settings, access tokens
           package: ./dist/ngx-color-palette-selector/package.json
+          check-version: false
