@@ -1,6 +1,13 @@
 {
   "name": "ngx-color-palette-selector",
   "version": "0.0.1",
+  "author": {
+    "name": "Philippe Loctaux",
+    "url": "https://philippeloctaux.com"
+  },
+  "homepage": "https://x4m3.github.io/ngx-color-palette-selector",
+  "description": "Radio button to select a color from a color palette",
+  "repository": "github:x4m3/ngx-color-palette-selector",
   "peerDependencies": {
     "@angular/common": "^12.0.5",
     "@angular/core": "^12.0.5"
