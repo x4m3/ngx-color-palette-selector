@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
+## Live demo
+
+https://x4m3.github.io/ngx-color-palette-selector/
+
+The source code of this demo can be found in `/projects/ngx-color-palette-seelctor-app/`.
+
 ## How to use
 
 Basic usage in a component:
