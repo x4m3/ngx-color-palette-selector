@@ -19,3 +19,9 @@ jobs:
         run: npm run build
       - name: Build Demo
         run: npm run build-demo
+      - name: Publish on npm
+        if: github.event_name == 'push' && ( github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' )
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }} # generate in npm settings, access tokens
+          package: ./dist/ngx-color-palette-selector/package.json
