@@ -19,3 +19,11 @@ jobs:
         run: npm run build
       - name: Build Demo
         run: npm run build-demo
+      - name: Publish to GitHub Pages
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+        with:
+          github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
+          angular_project_dir: projects/ngx-color-palette-selector-app/
+          base_href: /ngx-color-palette-selector/   # make sure this corresponds to https://<your_username>.github.io/<base_href>/
+          deploy_branch: gh-pages # The branch the action should deploy to.
+          angular_dist_build_folder: dist/ngx-color-palette-selector-app # The folder where your project is supposed to be after running ng build by the action.
