@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build-demo": "ng build ngx-color-palette-selector-app",
+    "build-demo-gh-pages": "ng build ngx-color-palette-selector-app --base-href /ngx-color-palette-selector/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
