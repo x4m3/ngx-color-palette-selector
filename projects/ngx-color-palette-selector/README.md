@@ -1,24 +1,56 @@
 # NgxColorPaletteSelector
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+Radio button to select a color from a color palette
 
-## Code scaffolding
+## Live demo
 
-Run `ng generate component component-name --project ngx-color-palette-selector` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-color-palette-selector`.
-> Note: Don't forget to add `--project ngx-color-palette-selector` or else it will be added to the default project in your `angular.json` file. 
+https://x4m3.github.io/ngx-color-palette-selector/
+
+The source code of this demo can be found in `/projects/ngx-color-palette-seelctor-app/`.
+
+## Install
+
+`npm i ngx-color-palette-selector`
+
+## How to use
+
+Basic usage in a component:
+
+html:
+```html
+<pre>{{ selected }}</pre>
+<ngx-color-palette-selector [colors]="colors" [(selected)]="selected"></ngx-color-palette-selector>
+```
+
+typescript:
+```typescript
+public selected = 'selected color will be here';
+public colors: string[] = [
+  '#B4AFF2',
+  '#F87D7D',
+  '#5092FC',
+  '#DF18D8',
+  '#D41101',
+  '#AC9AAF',
+  '#2D6108',
+  '#ABBF3C',
+  '#3189A6',
+  '#F96E61',
+];
+```
+
+![screenshot of result](https://github.com/x4m3/ngx-color-palette-selector/blob/master/basic-usage.png?raw=true)
+
+Select any color, and the color code will be put in the `selected` variable.
+
+## Local demo
+
+Run `ng serve` and navigate to `http://localhost:4200/`.
 
 ## Build
 
-Run `ng build ngx-color-palette-selector` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
+## Technical details
 
-After building your library with `ng build ngx-color-palette-selector`, go to the dist folder `cd dist/ngx-color-palette-selector` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-color-palette-selector` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
